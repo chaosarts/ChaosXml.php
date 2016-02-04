@@ -1,0 +1,37 @@
+{
+    "name": "chaosarts/xml",
+    "description": "Php xml lib",
+    "type": "lib",
+    "authors": [
+        {
+            "name": "Fu Lam Diep",
+            "email": "fulam.diep@chaosarts.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Ca\\Xml\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "chaosarts/core",
+                "version": "dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/chaosarts/php-core.git",
+                    "reference": "master"
+                },
+                "autoload": {
+                    "classmap": ["src/"]
+                }
+            }
+        }
+    ],
+    "require-dev": {
+        "chaosarts/core": "*"
+    }
+}
